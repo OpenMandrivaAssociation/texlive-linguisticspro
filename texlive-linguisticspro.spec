@@ -1,6 +1,6 @@
 Name:		texlive-linguisticspro
 Version:	64858
-Release:	1
+Release:	2
 Summary:	LinguisticsPro fonts with LaTeX support
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/linguisticspro
