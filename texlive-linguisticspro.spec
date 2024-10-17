@@ -3,7 +3,7 @@ Version:	64858
 Release:	2
 Summary:	LinguisticsPro fonts with LaTeX support
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/linguisticspro
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/linguisticspro
 License:	lppl ofl
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/linguisticspro.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/linguisticspro.doc.r%{version}.tar.xz
