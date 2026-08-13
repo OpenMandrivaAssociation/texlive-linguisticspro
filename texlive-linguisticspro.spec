@@ -12,10 +12,18 @@ Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/linguisticspro.r
 Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/linguisticspro.doc.r%{tl_revision}.tar.xz
 BuildArch:	noarch
 BuildSystem:	texlive
-Provides:	texlive(%{tl_name}) = %{tl_revision}
+Requires:	texlive-tlpkg
+Provides:	texlive(%{tl_name}) = %{version}
 
 %description
 The package provides LaTeX, pdfLaTeX, XeLaTeX and LuaLaTeX support for
 the LinguisticsPro family of fonts. This family is derived from the
 Utopia Nova font family, by Andreas Nolda.
 
+
+%install -a
+mkdir -p %{buildroot}%{_texmf_updmap_d}
+cat > %{buildroot}%{_texmf_updmap_d}/%{tl_name} <<'TL_DROPIN_EOF'
+# from linguisticspro:
+Map LinguisticsPro.map
+TL_DROPIN_EOF
